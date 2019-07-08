@@ -1,0 +1,22 @@
+.space-navbar-text{
+    padding-right: 9%;
+    color:red !important;
+    font-family: 'Butcherman', cursive;
+    
+}
+
+/* h1{
+    font-family: 'Butcherman', cursive;
+    color:red !important;
+    font-size: 50px;
+    padding-left: 25px;
+} */
+
+.space-nav{
+    padding:-1px;
+    margin-top:-10;
+}
+
+.timer{
+    margin: 0 auto;
+}

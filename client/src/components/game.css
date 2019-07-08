@@ -1,0 +1,37 @@
+.box {
+    background: grey;
+    opacity: 0.9;
+    border-radius: 5px;
+    display: inline-block;
+    height: 180px;
+    margin: 110px;
+    width: 180px;
+    margin-left: 119px;
+    margin-top: 250px;
+  }
+  .main-container:hover .box {
+    transform: scale(1.4);
+  }
+  .box1 {
+    transition: all 1.3s;
+    margin-left: 22%;
+  }
+  .box2 {
+    transition: all 1.3s 0.5s;
+  }
+  .box3 {
+    transition: all 1.3s 1s;
+  }
+  /* .box4 {
+    transition: all 1.3s 1.5s;
+    transform: translate(-600px, -400px);
+  } */
+  .gamebox {
+    border: 2px solid blue;
+    height: 750px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  

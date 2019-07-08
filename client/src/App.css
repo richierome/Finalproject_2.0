@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  
+  background-image: url('./images/web-background.jpg'); 
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  height: 115vh;
+  
+}

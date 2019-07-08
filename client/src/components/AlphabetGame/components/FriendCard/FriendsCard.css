@@ -1,0 +1,39 @@
+.alphabet-card {
+    border: 10px rgb(222,222,222) solid;
+    border-radius: 10px;
+    width: 115px;
+    height: 115px;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 6px 6px 10px rgb(25,148,215);
+    transition: all .1s ease-in-out;
+}
+  
+.alphabet-card > .img-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background:rgb(250, 250, 250);
+}
+  
+.alphabet-card > .img-container > img {
+    height: 100%;
+    width: 100%;
+}
+  
+.alphabet-card:hover {
+    box-shadow: 8px 8px 20px rgb(56, 56, 56);
+    transform: scale(1.3);
+    cursor: pointer;
+    border: 20px rgb(251, 255, 0) solid;
+    border-radius: 10px;
+}
+  
+.alphabet-card:active {
+    transform: translate(1px, 1px);
+    box-shadow: 8px 8px 20px rgb(56, 56, 56);
+    transform: scale(1.3);
+    cursor: pointer;
+    border: 30px rgb(2, 201, 52) solid;
+    border-radius: 10px;
+}

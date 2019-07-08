@@ -1,0 +1,11 @@
+* {
+}
+
+.Alphabet {
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    padding: 0;
+    margin: 0;
+    height: 750px;
+    width: 100%;
+  }

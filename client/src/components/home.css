@@ -1,0 +1,42 @@
+
+
+
+ .Home {
+     /* background-image: url('../images/web-background.jpg'); 
+     background-size: 100%; 
+     background-repeat: no-repeat;
+     height: 115vh;
+      */
+    }
+    
+      header{
+        padding-top: 117px;
+        text-align: center;
+        font-family: 'DM Serif Text', serif;
+        font-size: 50px;
+    }
+     
+ 
+ .bio-div {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .bio-text {
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.58;
+    color: RGBA(54, 54, 54, 1.00);
+  }
+  
+  .f-text {
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+  }
+
+
+  
