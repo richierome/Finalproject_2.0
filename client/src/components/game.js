@@ -3,6 +3,7 @@ import "./home.css"
 import "./game.css"
 import Alphabet from "../components/AlphabetGame/Alphabet"
 import Space from './SpaceGame/Space';
+import TypingGame from "../components/TypingGame/TypingGame";
 
 class Game extends React.Component {
     state = {
@@ -17,11 +18,11 @@ class Game extends React.Component {
 
     loadGame = () => {
         if (this.state.game === "game1"){
-            return <div><Alphabet /></div>     //<Alphabet />
+            return <div><Space /></div>     //<Alphabet />
         } else if (this.state.game === "game2"){
-            return <div><Space /></div>
+            return <div><Alphabet /></div>
         } else if (this.state.game === "game3"){
-            return <div>game3</div>
+            return <div><TypingGame /></div>
         // } else {
         //     return <div>game4</div>
         }
@@ -37,9 +38,15 @@ class Game extends React.Component {
                     {this.loadGame()}
                 </div>
             
-                <div className="box1 box" onClick={() => this.changeGame("game1")} ></div>
-                <div className="box2 box" onClick={() => this.changeGame("game2")}></div>
-                <div className="box3 box" onClick={() => this.changeGame("game3")}></div>
+                <div className="box1 box" onClick={() => this.changeGame("game1")}>
+                    <div className="main-box-text">Space Quest</div>
+                    </div>
+                <div className="box2 box" onClick={() => this.changeGame("game2")}>
+                    <div className="main-box-text">Alphabet</div>
+                    </div>
+                <div className="box3 box" onClick={() => this.changeGame("game3")}>
+                    <div className="main-box-text">Typing Game</div>
+                    </div>
                 {/* <div className="box4 box" onClick={() => this.changeGame("game4")}></div> */}
             </div>
           </div>
