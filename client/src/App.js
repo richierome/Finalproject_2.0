@@ -13,7 +13,7 @@ function App() {
       <Nav />
     <Switch>
       <Route path="/" component={Home} exact />
-      <Route path="/game" component={Game} />
+      <Route path="/game" component={Game} exact />
     </Switch>
     </div>
     </BrowserRouter>

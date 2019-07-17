@@ -1,16 +1,17 @@
 .space-navbar-text{
     padding-right: 9%;
     color:red !important;
-    font-family: 'Butcherman', cursive;
+    font-family: 'Butcherman', cursive!important;
+    font-size: 13px;
     
 }
 
-/* h1{
+h2{
     font-family: 'Butcherman', cursive;
     color:red !important;
     font-size: 50px;
-    padding-left: 25px;
-} */
+    padding-left: 15px;
+}
 
 .space-nav{
     padding:-1px;

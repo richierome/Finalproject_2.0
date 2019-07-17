@@ -1,9 +1,9 @@
 import React from 'react';
 import "./home.css"
 import "./game.css"
-import Alphabet from "../components/AlphabetGame/Alphabet"
+import Alphabet from "./AlphabetGame/Alphabet"
 import Space from './SpaceGame/Space';
-import TypingGame from "../components/TypingGame/TypingGame";
+import TypingGame from "./TypingGame/TypingGame";
 
 class Game extends React.Component {
     state = {

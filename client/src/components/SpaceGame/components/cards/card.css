@@ -1,14 +1,14 @@
 .space-img {
     position: absolute;
     margin: auto; 
-    height: 100%;
-    width: 55%; 
+    height: 97%;
+    width: 100%; 
 /* 
      For the following settings we set 100%, but it can be higher if needed 
     See the answer's update  */
 
-    left: -110%;
-    right: -110%;
+    left: -85%;
+    right: -85%;
     border-radius: 50%;
      /* top: -100%;
     bottom: -100%;  
@@ -23,13 +23,14 @@
 
 
 .space-portrait {
-    width: 375px;
+    width: 210px;
     height: 195px;
     overflow: hidden;
     margin: 10px;
     position: relative;
     background-position: center;
     margin-bottom: -5px;
+    margin-left: 25px
   
 }
 
@@ -44,5 +45,7 @@
 .space-planet-names{
     color:red;
     font-family: 'Butcherman', cursive;
-    text-align: center;
+    margin-left:80px;
+    font-size: 12px;
+
 }

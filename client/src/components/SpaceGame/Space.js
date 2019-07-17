@@ -1,6 +1,7 @@
 import React, { Component }from 'react';
 // import logo from './logo.svg';
 import './Space.css';
+import './components/wrapper/wrapper.css';
 import Cards from './components/cards/Cards';
 import Navbar from './components/navabar/Navbar';
 import Wrapper from './components/wrapper/Wrapper';
@@ -8,8 +9,10 @@ import characters from './character';
 import Sound from 'react-sound';
 import MyMp3 from './components/mp3/Large-Fireball.mp3';
 import YouTube from 'react-youtube';
+// import SpaceAlienAnimation from './components/spaceAlienAnimation/SpaceAlienAnimation';
 
-
+import alien from '../../images/alien.png';
+import astro from '../../images/astro4.png';
 
 const soundArray = [
   MyMp3, 
@@ -42,6 +45,99 @@ class Space extends Component {
     modal2: false,
     modal3: false
   };
+ 
+  
+  componentDidMount(){
+    
+    console.log('mountingagain');
+    let images = {
+      spaceShip: "alienImage",
+      satellite: "issImage"
+    }
+
+    let screenWidth = 1100;
+
+    const spaceShip = {
+    
+        noradNumber: 25544,
+        name: "alien",
+        longitude: 0
+      }
+
+    const floatSpaceShip = (screenWidth) => {
+      spaceShip.longitude += 5;
+
+      if(spaceShip.longitude > screenWidth) spaceShip.longitude = -7 * screenWidth;
+
+      document.getElementById(images.spaceShip).style.right = spaceShip.longitude + "px";
+    }
+
+    if(document.getElementById(images.spaceShip) !== null) {
+      document.getElementById(images.spaceShip).style.right = spaceShip.longitude + "px";
+      setTimeout(() => {
+        floatSpaceShip(screenWidth);
+      }, 5);
+    };
+
+    // var screenWidth = 1100;
+    // function floatSpaceShip(){
+    // spaceShip.longitude += 5;
+    // if ( spaceShip.longitude > screenWidth){
+    // spaceShip.longitude = -7 * screenWidth;
+
+    // }
+    // //console.log("Longitude", spaceShip.longitude);
+    // var s = document.getElementById("alienImage");
+    // //console.log(s)
+    // s.style.right=spaceShip.longitude + "px";
+    // setTimeout(()=>{floatSpaceShip()}, 5);
+    // }
+
+
+    const satellite = {
+        noradNumber: 25544,
+        name: "International Space Station",
+        longitude: 0
+    }
+
+    const floatSatellite = (screenWidth) => {
+      satellite.longitude -= 5;
+
+      if(satellite.longitude > screenWidth) satellite.longitude = -7 * screenWidth;
+
+      document.getElementById(images.satellite).style.right = satellite.longitude + "px";
+    }
+
+    if(document.getElementById(images.satellite) !== null) {
+      document.getElementById(images.satellite).style.right = satellite.longitude + "px";
+      setTimeout(() => {
+        floatSatellite(screenWidth);
+      }, 5);
+    }
+    
+
+    
+    // function floatSatellite(){
+    // satellite.longitude -= 5;
+    // if ( satellite.longitude > screenWidth){
+    // satellite.longitude = -7 * screenWidth;
+
+    // }
+    // //console.log("Longitude", satellite.longitude);
+    // var d = document.getElementById("issImage"); // ship
+    // //console.log(d)
+    //  d.style.right =satellite.longitude + "px";
+    // setTimeout(()=>{floatSatellite()}, 5);
+
+    // }
+
+
+   
+      
+    //  floatSatellite()
+    //  floatSpaceShip()   
+    
+}
 
   handleClick = id => {
     const chosenCharacter = this.state.characters.find(name => name.id === id);
@@ -91,7 +187,7 @@ class Space extends Component {
       else {
       
       
-        alert("Almost, lets check out the Moon then Try it Again!")
+        alert("Almost, lets check out the Moon then Try it again!")
         this.setState({
           currentScore: 0,
           characters: characters.map(character => ({...character})),
@@ -122,7 +218,7 @@ render(){
   const { handleClick } = this
   const { highScore,currentScore,cardGuess }= this.state
   let cardCharacters = this.state.characters.map((character,index) => {
-    return (<div className="col-3"><Cards key={index} id={character.id}  name={character.name} image={character.image} handleClick={this.handleClick}/> </div>)
+    return (<div className="col-3" key={index}><Cards id={character.id}  name={character.name} image={character.image} handleClick={this.handleClick}/> </div>)
     
   });
 
@@ -187,29 +283,29 @@ render(){
     
 
   return(
-   <div className="Space-body container-fluid">
+   <div className="Space-body container-fluid" style={{overflow: 'hidden'}}>
+     <div style={{position: 'relative', left: '0', height: '0', top: '10px'}}>      
+     
+     </div>
      {
        this.state.sound
        
      }
+     
+      
     
      <Navbar
      highScore={highScore}
      currentScore={currentScore}
-     cardGuess={cardGuess}
-
+     cardGuess={cardGuess} 
      />
     
    {this.state.modal ? modal: null}
    {this.state.modal2 ? modal2: null}
    {this.state.modal3 ? modal3: null}
-      <Wrapper>
-     <div className="row">
-        {cardCharacters}
-     </div>
-        {handleClick}
-     
-      </Wrapper>       
+      
+   <Wrapper cardCharacters={cardCharacters}  /> 
+  { handleClick }
    </div>
 
   )

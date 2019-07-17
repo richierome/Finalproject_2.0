@@ -8,8 +8,51 @@
     /* position: relative;
  } */ 
 
- .Typeback {
+ /* .Typeback {
      background-image: url("../../images/coming-soon.jpg");
      height: 682px;
      background-image: cover;
+     width: 1269px;
+ } */
+
+ div.typingbox {
+    margin-top: 100px;
+    /* background-color: aqua; */
+    border: 10px blue;
+    height: 495px;
+    width: 600px;
+    font-size: 50px;
+    /* margin-left: 38%; */
+    font-family: 'Indie Flower', cursive;
+ }
+ .fallingBox {
+    position: relative;
+    color: white;
+    /* background-color: aqua */
+ }
+ 
+ .typegamebody {
+    background: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif") cover;
+ }
+ 
+ #wrapper {
+    background: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ b {
+     font-size: 30px;
+     color: white;
+ }
+
+ #score {
+    font-size: 20px;
+    color: white;
+ }
+ #lives {
+    font-size: 20px;
+    color: white;
  }
