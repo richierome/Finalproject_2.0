@@ -13,7 +13,7 @@ function Home() {
         <header>First Step</header>
 
         <div className="bio-div">
-          <p className="bio-text"><span className="f-text">Lifelong learning through a fun and educational games</span> Our goal is to be engaging fun and most important educational in the early stages of child development.</p>
+          <p className="bio-text"><span className="f-text">Lifelong learning through fun and educational games.</span> <br></br>Our goal is to be engaging fun and most important educational in the early stages of child development.</p>
 
           <p className="bio-text">    First Step is a way for children to develop a strong foundation and building platform for lifelong skills.</p>
           <p className="bio-text">    First Step will introduce simple fun interactive games that will grasp the attention and teach fundamental skills of a young developing mind.</p>

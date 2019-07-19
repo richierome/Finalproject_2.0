@@ -36,7 +36,12 @@
  }
  
  #wrapper {
-    background: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
+    background: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif")no-repeat; 
+    /* background: url("https://media.giphy.com/media/xUA7baJMLUdTfeVkWI/giphy.gif")no-repeat; */
+    /* background: url("https://media.giphy.com/media/l3c68JsmKL7zwMamA/giphy.gif")no-repeat; */
+    /* background: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif")no-repeat; */
+    /*  */
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
