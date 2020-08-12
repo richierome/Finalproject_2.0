@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <Nav />
     <Switch>
-      <Route path="/" component={Home} exact />
+      <Route path={process.env.PUBLIC_URL + '/'} component={Home} exact />
       <Route path="/game" component={Game} exact />
     </Switch>
     </div>

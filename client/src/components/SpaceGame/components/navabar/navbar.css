@@ -10,7 +10,7 @@ h2{
     font-family: 'Butcherman', cursive;
     color:red !important;
     font-size: 50px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 
 .space-nav{
@@ -21,3 +21,5 @@ h2{
 .timer{
     margin: 0 auto;
 }
+
+

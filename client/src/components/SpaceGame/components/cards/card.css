@@ -1,8 +1,8 @@
 .space-img {
     position: absolute;
     margin: auto; 
-    height: 97%;
-    width: 100%; 
+    /* height: 97%;
+    width: 100%;  */
 /* 
      For the following settings we set 100%, but it can be higher if needed 
     See the answer's update  */
@@ -45,7 +45,259 @@
 .space-planet-names{
     color:red;
     font-family: 'Butcherman', cursive;
-    margin-left:80px;
+    /* margin-left:80px; */
     font-size: 12px;
-
+    text-align: center;
 }
+
+.space-card{
+    border-radius:20px
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .space-navbar-text .timer{
+        
+        font-size: 10px !important
+        
+      }
+    }
+
+    @media only screen and (max-width: 1100px) {
+        h2{
+            
+            font-size: 32px !important;
+            
+          }
+        }
+    
+    
+        @media only screen and (max-width: 1100px) {
+            .timer{
+                
+                font-size: 13px;
+                
+              }
+            }
+        
+    
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    .space-portrait {
+       
+        height: 135px;
+        /* width: 75px */
+        border-radius: 62px;
+      }
+    }
+
+   
+
+    @media only screen and (max-width: 800px) {
+        .space-navbar-text {
+            
+            font-size: 7px !important
+            
+          }
+        }
+    
+
+    @media only screen and (max-width: 800px) {
+        .space-portrait {
+           
+            height: 135px;
+            width: 75px;
+            border-radius: 40px;
+          }
+        }
+    
+
+    
+    @media only screen and (max-width: 800px) {
+        .space-planet-names{
+            height: 100px;
+            
+            
+          }
+        }
+
+
+
+@media only screen and (max-width: 800px) {
+    .space-navbar{
+        font-size: 25px;
+        
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .space-portrait {
+           
+            height: 85px;
+            
+          }
+        }
+
+
+    
+    @media only screen and (max-width: 800px) {
+        .space-img{
+            height: 70px;
+            
+          }
+        }
+
+
+        @media only screen and (max-width: 500px) {
+            .space-planet-names{
+                height: 75px;
+                font-size: 12px;
+                
+              }
+            }
+
+
+@media only screen and (max-width: 500px) {
+    .space-navbar{
+        font-size: 25px;
+        
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .space-img{
+            height: 35px;
+            
+          }
+        }
+        @media only screen and (max-width: 500px) {
+            h2 {
+                font-size: 16px !important;
+              }
+            }
+    
+
+
+
+        @media only screen and (max-width: 500px) {
+            .space-portrait {
+                width: 25px;
+                height: 85px;
+                border-radius: 20px;
+              }
+            }
+    
+
+        @media only screen and (max-width: 400px) {
+            .space-img{
+                height: 35px;
+                
+              }
+            }
+
+        
+            @media only screen and (max-width: 400px) {
+                .space-planet-names{
+                    height: 100px;
+                    font-size: 9px;
+                    
+                  }
+                }
+    
+
+                
+    @media only screen and (max-width: 400px) {
+        .space-portrait {
+            width: 25px;
+            height: 40px;
+            
+          }
+        }
+           
+        @media only screen and (max-width: 400px) {
+            .Space-body{
+                
+                height: 650px !important;
+                
+              }
+            }
+
+            @media only screen and (max-width: 350px) {
+                h2 {
+                    font-size: 23px !important;
+                  }
+                }
+        
+    
+
+            @media only screen and (max-width: 350px) {
+                .timer{
+                    
+                    font-size: 6px !important;
+                    
+                  }
+                }
+                   
+    
+
+@media only screen and (max-width: 350px) {
+    .space-navbar{
+        font-size: 25px;
+        
+      }
+    }
+
+    
+        
+    @media only screen and (max-width: 350px) {
+        .space-portrait {
+            width: 20px;
+            height: 40px;
+            
+          }
+        }
+        
+    
+
+    @media only screen and (max-width: 350px) {
+        .space-img {
+            height: 35px;
+            
+          }
+        }
+ 
+        @media only screen and (max-width: 350px) {
+            .space-planet-names{
+                height: 100px;
+                font-size: 5px;
+                
+              }
+            }
+        
+        
+            @media only screen and (max-width: 350px) {
+                .space-navbar-text{
+                    
+                    font-size: 8px !important
+                    
+                  }
+                }
+
+             
+                @media only screen and (max-width: 350px) {
+                    .Space-body{
+                        
+                        height: 600px !important;
+                        
+                      }
+                    }
+
+                      
+
+        
+    
+
+    

@@ -14,7 +14,7 @@ function Nav() {
         </div>
         <div id="mainListDiv" className="main_list">
             <ul className="navlinks">
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/Home">Home</Link></li>
                 <li><Link to="/game">Games</Link></li>
                 
             </ul>
